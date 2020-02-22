@@ -6,8 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-mongo-rest-api" />
         <module name="hello-world-api" />
+        <module name="spring-mongo-rest-api" />
+        <module name="spring-elasticsearch" />
       </profile>
     </annotationProcessing>
   </component>
