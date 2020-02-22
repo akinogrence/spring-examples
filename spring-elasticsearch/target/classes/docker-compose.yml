@@ -1,0 +1,13 @@
+# Use root/example as User/password credentials
+#Activate Docker Image -> docker-compose -f Documents/IdeaProjects/spring-examples/spring-elasticsearch/src/main/resources/docker-compose.yml up -d
+version: '3.1'
+
+services:
+
+  elasticsearch:
+    image: elasticsearch:7.4.2
+    ports:
+      - '9200:9200'
+      - '9300:9300'
+    environment:
+      - discovery.type=single-node
