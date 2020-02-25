@@ -13,6 +13,8 @@
         <module>hello-world-api</module>
         <module>spring-elasticsearch</module>
         <module>spring-datajpa-postgresql</module>
+        <module>swagger2-api-documentation</module>
+        <module>spring-boot-rabbitmq</module>
     </modules>
 
 
