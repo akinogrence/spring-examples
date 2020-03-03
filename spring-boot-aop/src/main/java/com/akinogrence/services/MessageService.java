@@ -10,6 +10,7 @@ public interface MessageService {
 
     public Message sendMessageWithUser(Message message);
     public List<Message> getAllMessage();
+    public List<Message> getMessageforUser(String userID);
 
 
 

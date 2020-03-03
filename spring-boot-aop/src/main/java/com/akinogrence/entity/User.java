@@ -5,6 +5,7 @@ import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.HashMap;
+import java.util.List;
 
 @Document(collection = "users")
 public class User {
@@ -16,7 +17,7 @@ public class User {
     private String name;
     private String lastName;
     private String country;
-    private HashMap wasSendedMessages;
+    private List<Message> wasSendedMessages;
 
 
     public String getId() {
@@ -60,11 +61,11 @@ public class User {
     }
 
 
-    public HashMap getWasSendedMessages() {
+    public List<Message> getWasSendedMessages() {
         return wasSendedMessages;
     }
 
-    public void setWasSendedMessages(HashMap wasSendedMessages) {
+    public void setWasSendedMessages(List wasSendedMessages) {
         this.wasSendedMessages = wasSendedMessages;
     }
 

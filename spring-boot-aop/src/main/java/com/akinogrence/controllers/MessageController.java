@@ -21,8 +21,8 @@ public class MessageController {
     @GetMapping
     @RequestMapping("getMessage/{userID}")
     private ResponseEntity<List<Message>> getMessageforUser(@PathVariable String userID) {
-
-        return ResponseEntity.ok(new ArrayList<Message>());
+        System.out.println("test");
+        return ResponseEntity.ok(messageService.getMessageforUser(userID));
     }
 
     @PostMapping
